@@ -52,7 +52,7 @@ cluster2.means <- colMeans(cluster2)
 
 diff <- cluster1.means - cluster2.means
 #Make a snake plot
-plot(sort(diff), 1:length(diff), type = "n", xlab = "cluster 2 <–-> cluster 1", yaxt = "n", ylab = "")
+plot(sort(diff), 1:length(diff), type = "n", xlab = "cluster 2 <---> cluster 1", yaxt = "n", ylab = "")
 text(sort(diff), 1:length(diff), names(sort(diff)))
 
 #Try divisive clustering (partitioning around medoids) with 3 clusters
